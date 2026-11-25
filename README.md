@@ -47,12 +47,12 @@ Jika shim `npm` pada Windows ini mengarah ke instalasi yang hilang, jalankan CLI
 
 Variabel lingkungan yang diperlukan:
 
-| Variabel | Isi |
-|---|---|
-| `GOOGLE_SPREADSHEET_ID` | ID spreadsheet yang sesuai lingkungan |
-| `GOOGLE_SHEET_TAB` | Nama tab (huruf, angka, spasi, titik, garis bawah, atau tanda minus) |
-| `GOOGLE_SERVICE_ACCOUNT_EMAIL` | Email service account |
-| `GOOGLE_PRIVATE_KEY` | Private key service account, rahasia |
+| Variabel                       | Isi                                                                  |
+| ------------------------------ | -------------------------------------------------------------------- |
+| `GOOGLE_SPREADSHEET_ID`        | ID spreadsheet yang sesuai lingkungan                                |
+| `GOOGLE_SHEET_TAB`             | Nama tab (huruf, angka, spasi, titik, garis bawah, atau tanda minus) |
+| `GOOGLE_SERVICE_ACCOUNT_EMAIL` | Email service account                                                |
+| `GOOGLE_PRIVATE_KEY`           | Private key service account, rahasia                                 |
 
 ## Pengujian
 
@@ -97,3 +97,20 @@ AI digunakan untuk membantu implementasi komponen, integrasi route, penulisan do
 - Tidak ada rate limiting terdistribusi. Untuk eksposur publik yang lebih luas, tambahkan proteksi spam/abuse sebelum skala lalu lintas naik.
 - Google Sheets tidak dirancang sebagai basis data transaksi. Jika Google sempat menyimpan baris namun respons gagal diterima, retry dapat menghasilkan respons duplikat; verifikasi sheet sebelum menyimpulkan kegagalan permanen.
 - Jadwal ilustrasi bertanggal Januari 2027; perbarui tanggal ketika contoh tersebut tidak lagi relevan.
+
+## Live Demo & Repository
+
+- **Live Website:** https://lamarrapi-mvp.vercel.app/
+- **GitHub Repository:** https://github.com/awalkarca29/lamarrapi-mvp
+
+## Status Implementasi
+
+Landing Page MVP telah diimplementasikan menggunakan Next.js,
+TypeScript, dan Tailwind CSS.
+
+Formulir minat telah terintegrasi dengan Google Sheets API
+melalui server-side API Route dan berhasil diuji pada
+lingkungan Production.
+
+Product Preview menggunakan data ilustrasi dan belum
+merupakan fitur tracking yang dapat digunakan secara langsung.
